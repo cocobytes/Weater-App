@@ -1,9 +1,14 @@
 # Weater-App
 
 ## gndx-challenges
-
-
 Weater-App es una aplicacion climatologia que consume una Api para obtener ubicacion actual de los climas y de los 4 dias anteriores.
+
+## Weater App(Info)
+
+-Responsive Design
+-Permiso de activar Ubicacion
+-Ubicación General (Capital), Primera Ubicación en la posición Actual que se encuentra
+-Api Consumida : https://openweathermap.org/api/one-call-api
 
 
 [Demostracion Web](https://crismaxis.github.io/Weater-App/)
