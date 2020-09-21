@@ -5,9 +5,9 @@ Weater-App es una aplicacion climatologia que consume una Api para obtener ubica
 
 ## Weater App(Info)
 
--Responsive Design
--Permiso de activar Ubicacion
--Ubicación General (Capital), Primera Ubicación en la posición Actual que se encuentra
+-Responsive Design <br>
+-Permiso de activar Ubicacion <br>
+-Ubicación General (Capital), Primera Ubicación en la posición Actual que se encuentra <br>
 -Api Consumida : https://openweathermap.org/api/one-call-api
 
 
