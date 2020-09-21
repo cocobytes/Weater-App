@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descripcion de la Pagina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weater App</title>
+
+    <!-- ------COLOR PESTAÑA----- -->
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- ------ICONO PESTAÑA----- -->
+    <link rel="icon" href="img/Icono.png">
+
+    <!-- ------CSS LINKS----- -->
+    <link rel="stylesheet" href="sass/css/all.min.css">
+    <link rel="stylesheet" href="sass/css/normalize.css">
+    <link rel="stylesheet" href="sass/css/main.css">
+</head>
+
+<body>
+
+    <section class="LoaderPage">
+        <img src="img/loaded.gif">
+        <div class="LodInfo">
+            <p id="LodInfo1">Cargando Datos...</p>
+            <p id="LodInfo2">Buscando Posicion...</p>
+        </div>
+    </section>
+
+    <i class="fas fa-bars" id="Menu"></i>
+    <i class="fas fa-bars" id="MenuMobil"></i>
+
+    <nav class="MenuMax">
+        <div class="DatosFlex">
+
+            <p>Datos Actuales</p>
+            <hr>
+            <div class="DatosClima">
+                <p>Velocidad Viento:</p>
+                <p id="Velviento"></p>
+            </div>
+            <div class="DatosClima">
+                <p>Humedad:</p>
+                <p id="Humedad"></p>
+            </div>
+            <div class="DatosClima">
+                <p>Nubosidad:</p>
+                <p id="Nubosidad"></p>
+            </div>
+            <div class="DatosClima">
+                <p>Visibilidad:</p>
+                <p id="Visibilidad"></p>
+            </div>
+            <div class="DatosClima">
+                <p>Direccion del Viento:</p>
+                <p id="DireccionViento"></p>
+            </div>
+        </div>
+        <div class="HoraActual">
+            <p id="Hora"></p>
+        </div>
+        <div class="Copy">
+            <p>Todos los derechos reservados(c)- Weater App</p>
+        </div>
+    </nav>
+
+    <section class="MenuMobil">
+        <div class="DatosFlex">
+            <p>Datos Actuales</p>
+            <hr>
+            <div class="DatosClima">
+                <p>Velocidad Viento:</p>
+                <p id="Velviento"></p>
+            </div>
+            <div class="DatosClima">
+                <p>Humedad:</p>
+                <p id="Humedad"></p>
+            </div>
+            <div class="DatosClima">
+                <p>Nubosidad:</p>
+                <p id="Nubosidad"></p>
+            </div>
+            <div class="DatosClima">
+                <p>Visibilidad:</p>
+                <p id="Visibilidad"></p>
+            </div>
+            <div class="DatosClima">
+                <p>Direccion del Viento:</p>
+                <p id="DireccionViento"></p>
+            </div>
+        </div>
+        <div class="HoraActual">
+            <p id="Hora"></p>
+        </div>
+        <div class="Copy">
+            <p>Todos los derechos reservados(c)- Weater App</p>
+        </div>
+    </section>
+
+    <header>
+        <div class="PagHeader">
+            <div class="Top">
+                <p id="Posicion"></p>
+                <p id="Fecha"></p>
+            </div>
+
+            <div class="ClimaActual">
+                <div class="ClimaContainer"></div>
+            </div>
+            <div class="DiasClima">
+                <div class="DiasContainer">
+                    <li id="DiaMenos1"></li>
+                    <li id="DiaMenos2"></li>
+                    <li id="DiaMenos3"></li>
+                    <li id="DiaMenos4"></li>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ------SCRIPT------ -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

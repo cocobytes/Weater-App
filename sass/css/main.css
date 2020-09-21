@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  max-width: 100%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #061531;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 4;
+  color: white;
+}
+
+i#MenuMobil {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  i#MenuMobil {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  i#Menu {
+    display: none;
+  }
+}
+
+nav,
+section.MenuMobil {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #183550;
+  color: white;
+  z-index: 2;
+  padding: 15px 15px;
+  position: relative;
+}
+
+nav hr,
+section.MenuMobil hr {
+  border: .5px solid #ffffff69;
+  margin-bottom: 40px;
+}
+
+nav .DatosFlex,
+section.MenuMobil .DatosFlex {
+  padding-top: 50px;
+}
+
+nav .DatosClima,
+section.MenuMobil .DatosClima {
+  margin-top: 15px;
+}
+
+nav .DatosClima p:nth-of-type(1),
+section.MenuMobil .DatosClima p:nth-of-type(1) {
+  font-size: 13px;
+}
+
+nav .DatosClima p:nth-of-type(2),
+section.MenuMobil .DatosClima p:nth-of-type(2) {
+  padding-top: 3px;
+  font-weight: 17px;
+  font-weight: bold;
+}
+
+nav .Copy,
+section.MenuMobil .Copy {
+  position: absolute;
+  bottom: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+nav .Copy p,
+section.MenuMobil .Copy p {
+  font-size: 13px;
+  color: #ffffffc4;
+}
+
+nav .HoraActual,
+section.MenuMobil .HoraActual {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 15px 0;
+  background-color: rgba(10, 8, 36, 0.535);
+  border-radius: 8px;
+}
+
+nav .HoraActual p,
+section.MenuMobil .HoraActual p {
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  nav.MenuMax {
+    display: none !important;
+  }
+}
+
+section.MenuMobil {
+  display: none;
+  -webkit-animation: MnuMobil .7s ease 0s;
+          animation: MnuMobil .7s ease 0s;
+}
+
+@media (max-width: 1200px) {
+  section.MenuMobil {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes MnuMobil {
+  0% {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes MnuMobil {
+  0% {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 0 0 250px;
+  color: white;
+}
+
+header div.PagHeader {
+  width: 100%;
+  padding: 15px 15px;
+  height: 100vh;
+  position: relative;
+}
+
+@media (max-width: 400px) {
+  header div.PagHeader {
+    padding: 0;
+  }
+}
+
+header div.Top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header div.Top .Unidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  header div.Top {
+    padding: 50px 20px;
+  }
+}
+
+header .ClimaActual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+header .ClimaActual .ClimaContainer {
+  width: 400px;
+  height: 390px;
+  padding-top: 30px;
+  border-right: 1px solid rgba(255, 255, 255, 0.556);
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+header .ClimaActual .ClimaContainer img {
+  width: 300px;
+  position: relative;
+  top: -55px;
+}
+
+@media (min-width: 1500px) {
+  header .ClimaActual .ClimaContainer img {
+    width: 500px;
+  }
+}
+
+header .ClimaActual .ClimaContainer p:nth-of-type(1) {
+  font-size: 20px;
+}
+
+header .ClimaActual .ClimaContainer p:nth-of-type(2) {
+  font-size: 60px;
+  position: relative;
+  top: -100px;
+}
+
+header .ClimaActual .ClimaContainer p:nth-of-type(2) span {
+  padding-left: 10px;
+  font-size: 50px;
+}
+
+header .ClimaActual .ClimaContainer p:nth-of-type(3) {
+  font-size: 20px;
+  position: relative;
+  top: -100px;
+}
+
+header .ClimaActual .ClimaContainer .Punto {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -8px;
+  top: 50%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+@media (max-width: 500px) {
+  header .ClimaActual .ClimaContainer .Punto {
+    right: 20px;
+    top: 288px;
+  }
+}
+
+@media (min-width: 1500px) {
+  header .ClimaActual .ClimaContainer {
+    width: 600px;
+    height: 350px;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 500px) {
+  header .ClimaActual .ClimaContainer {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.556);
+  }
+}
+
+@media (min-width: 1600px) {
+  header .ClimaActual {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 600px) {
+  header .ClimaActual {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  header .ClimaActual {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  header .ClimaActual {
+    margin-top: 70px;
+  }
+}
+
+header .DiasClima {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+header .DiasClima .DiasContainer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 120px;
+}
+
+header .DiasClima .DiasContainer li {
+  width: 130px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: rgba(9, 6, 26, 0.604);
+  text-align: center;
+  position: relative;
+}
+
+header .DiasClima .DiasContainer li p:nth-of-type(1) {
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  header .DiasClima .DiasContainer li p:nth-of-type(1) {
+    margin-top: 90px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  header .DiasClima .DiasContainer li p:nth-of-type(2) {
+    font-size: 35px;
+  }
+}
+
+header .DiasClima .DiasContainer li img {
+  width: 180px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  left: 5px;
+}
+
+@media (max-width: 600px) {
+  header .DiasClima .DiasContainer li img {
+    top: -90px;
+    width: 240px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 1100px) {
+  header .DiasClima .DiasContainer li {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  header .DiasClima .DiasContainer li {
+    width: 220px;
+    height: 170px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  header .DiasClima .DiasContainer {
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 980px) {
+  header .DiasClima .DiasContainer {
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 810px) {
+  header .DiasClima .DiasContainer {
+    bottom: -130px;
+  }
+}
+
+@media (max-width: 724px) {
+  header .DiasClima .DiasContainer {
+    bottom: -130px;
+  }
+}
+
+@media (max-width: 600px) {
+  header .DiasClima .DiasContainer {
+    bottom: -1050px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  header .DiasClima .DiasContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (fr)[1];
+        grid-template-columns: repeat(1, fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 0 0 0 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 8px;
+  }
+}
+
+img.ImgNot {
+  margin-top: 80px;
+  width: 200px !important;
+}
+
+img.ImgDiaNot {
+  width: 80px !important;
+  height: 50px !important;
+  top: -25px !important;
+  left: 25px !important;
+}
+
+.PNot {
+  margin-top: 80px;
+}
+
+.LoaderPage {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #e6eefc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.LoaderPage img {
+  position: relative;
+  top: -40px;
+}
+
+@media (max-width: 650px) {
+  .LoaderPage img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.LoaderPage .LodInfo {
+  background-color: #ecf2fc;
+  position: absolute;
+  bottom: 120px;
+  padding: 40px 50px;
+}
+
+.LoaderPage .LodInfo p {
+  color: #484948;
+}
+
+.LoaderPage .LodInfo #LodInfo2 {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .LoaderPage .LodInfo {
+    background-color: #ecf2fc00;
+  }
+}
+/*# sourceMappingURL=main.css.map */

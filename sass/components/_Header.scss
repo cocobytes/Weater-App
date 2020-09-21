@@ -1,0 +1,248 @@
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 0 0 250px;
+    color: white;
+
+    div.PagHeader {
+        width: 100%;
+        padding: 15px 15px;
+        height: 100vh;
+        position: relative;
+
+        @media (max-width:400px) {
+            padding: 0;
+        }
+    }
+
+    div.Top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .Unidades {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media(max-width:600px) {
+            padding: 50px 20px;
+        }
+    }
+
+    .ClimaActual {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+
+        .ClimaContainer {
+            width: 400px;
+            height: 390px;
+            padding-top: 30px;
+            border-right: 1px solid rgba(255, 255, 255, 0.556);
+            text-align: center;
+            border-radius: 50%;
+            position: relative;
+
+            img {
+                width: 300px;
+                position: relative;
+                top: -55px;
+
+                @media (min-width:1500px) {
+                    width: 500px;
+                }
+            }
+
+            p:nth-of-type(1) {
+                font-size: 20px;
+
+            }
+
+            p:nth-of-type(2) {
+                font-size: 60px;
+                position: relative;
+                top: -100px;
+
+                span {
+                    padding-left: 10px;
+                    font-size: 50px;
+                }
+            }
+
+            p:nth-of-type(3) {
+                font-size: 20px;
+                position: relative;
+                top: -100px;
+            }
+
+            .Punto {
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                right: -8px;
+                top: 50%;
+                border-radius: 50%;
+                background-color: rgb(255, 255, 255);
+
+                @media (max-width:500px) {
+                    right: 20px;
+                    top: 288px;
+                }
+            }
+
+            @media (min-width:1500px) {
+                width: 600px;
+                height: 350px;
+                height: 70vh;
+            }
+
+            @media (max-width:500px) {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.556);
+            }
+        }
+
+        @media (min-width:1600px) {
+            height: 70vh;
+        }
+
+        @media (max-width:600px) {
+            margin-top: 70px;
+        }
+
+        @media (max-width:500px) {
+            margin-top: 80px;
+        }
+
+        @media (max-width:400px) {
+            margin-top: 70px;
+        }
+    }
+
+    .DiasClima {
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        position: absolute;
+
+        .DiasContainer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 120px;
+
+
+            li {
+                width: 130px;
+                height: 100px;
+                border-radius: 8px;
+                background-color: rgba(9, 6, 26, 0.604);
+                text-align: center;
+                position: relative;
+
+                p:nth-of-type(1) {
+                    margin-top: 50px;
+
+
+                    @media(max-width: 600px) {
+                        margin-top: 90px;
+                        font-size: 20px;
+                    }
+                }
+
+                p:nth-of-type(2) {
+                    @media(max-width: 600px) {
+                        font-size: 35px;
+                    }
+                }
+
+                img {
+                    width: 180px;
+                    height: 140px;
+                    position: absolute;
+                    top: -70px;
+                    left: 5px;
+
+                    @media(max-width: 600px) {
+                        top: -90px;
+                        width: 240px;
+                        height: 220px;
+                    }
+
+                }
+
+                @media(max-width:1100px) {
+                    margin-bottom: 70px;
+                }
+
+                @media(max-width: 600px) {
+                    width: 220px;
+                    height: 170px;
+                    margin-bottom: 80px;
+                }
+            }
+
+            @media(max-width: 1100px) {
+                bottom: -50px;
+            }
+
+            @media(max-width: 980px) {
+                bottom: -50px;
+            }
+
+            @media(max-width: 810px) {
+                bottom: -130px;
+            }
+
+            @media(max-width: 724px) {
+                bottom: -130px;
+            }
+
+            @media(max-width: 600px) {
+                bottom: -1050px;
+                justify-content: center;
+            }
+
+            @media(max-width: 450px) {
+                display: grid;
+                grid-template-columns: repeat(1, fr);
+            }
+        }
+    }
+
+    @media (max-width:1200px) {
+        padding: 0 0 0 50px;
+    }
+
+    @media (max-width:600px) {
+        padding: 8px;
+    }
+
+}
+
+img.ImgNot {
+    margin-top: 80px;
+    width: 200px !important;
+}
+
+img.ImgDiaNot {
+    width: 80px !important;
+    height: 50px !important;
+    top: -25px !important;
+    left: 25px !important;
+}
+
+.PNot {
+    margin-top: 80px;
+}

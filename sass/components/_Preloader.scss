@@ -1,0 +1,41 @@
+.LoaderPage {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #e6eefc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        position: relative;
+        top: -40px;
+
+        @media (max-width:650px) {
+            height: 250px;
+            width: 250px;
+        }
+    }
+
+    .LodInfo {
+        background-color: #ecf2fc;
+        position: absolute;
+        bottom: 120px;
+        padding: 40px 50px;
+
+        p {
+            color: rgb(72, 73, 72);
+        }
+
+        #LodInfo2 {
+            display: none;
+        }
+
+        @media (max-width:650px) {
+            background-color: #ecf2fc00;
+        }
+    }
+}
